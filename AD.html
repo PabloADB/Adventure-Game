@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="IMG/icons8-amd-ryzen-64.png">
+  <title>El Legado Emocional</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+  background-image: url("IMG/lens-between-figures_4096x2304_xtrafondos.com.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  font-family: Arial, sans-serif;
+  }
+
+  .fondo1 {
+    background-image: url("IMG/wallpaperbetter.png");
+  }
+
+  .fondo2 {
+    background-image: url("IMG/3bf3b7_745ada1a53dc4639b9cb22d1adbcca16~mv2.gif");
+  }
+</style>
+<center>
+<body>
+  <div class="container">
+  <div class="background-img">
+  <div class="box">
+  <div class="game-container">
+    <h1>El Legado Emocional</h1>
+    
+    <div class="choices">
+      <button class="choice" id="reproducirMusica1" onclick="selectOption(1)">Leer el diario</button>
+      <button class="choice" onclick="selectOption(2)">Explorar el entorno</button>
+      <button class="choice"  id="reproducirMusica2"onclick="selectOption(3)"></button>
+      <button class="choice" id="refreshButton">Refrescar</button>
+      <div id="modal" class="modal">
+      <div class="modal-content">
+            <audio id="musica1" src="Audio/48 Main Theme (Piano Version).mp3" loop></audio>
+            <audio id="musica2" src="Audio/09 Family First.mp3" loop></audio>
+                   
+  </div>
+</div>
+    </div>
+    <hr>
+    <p id="story">Ana acaba de graduarse de la universidad...</p>
+    <hr>
+    <div id="result" class="result"></div>
+  </div>
+  <br>
+  <br>
+  <script src="script.js"></script>
+</div>
+</div>
+</div>
+</body>
+</center>
+</html>
